@@ -1,0 +1,18 @@
+{
+  "name": "customizable-scss-radio-checkbox",
+  "version": "1.0.0",
+  "author": "samudithaw",
+  "license": "MIT",
+  "description": "Pure CSS customizable Checkboxes and Radio button for any project",
+  "main": "css-only-checkbox.scss",
+  "keywords": [
+    "checkbox",
+    "radio",
+    "css",
+    "scss"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samudithaw/customizable-scss-radio-checkbox.git"
+  }
+}
