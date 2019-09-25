@@ -42,26 +42,28 @@
       left: ($radio-width / 4);
       top: ($radio-height / 4);
       transform: scale(0, 0);
-      transition: transform 0.2s cubic-bezier(1, 1, 1, 1);
+      transition: transform .2s cubic-bezier(1, 1, 1, 1);
       width: ($radio-height / 2);
 
     }
   }
 
-  input[type="radio"] {
-    height: $radio-height;
-    left: 0;
-    margin: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: $radio-width;
+  input {
+    &[type='radio'] {
+      height: $radio-height;
+      left: 0;
+      margin: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: $radio-width;
 
-    &:checked {
-      + label {
-        &::after {
-          transform: scale(1,1);
-          transition: transform 0.4s cubic-bezier(0.45, 2, 0.5, 0.75);
+      &:checked {
+        + label {
+          &::after {
+            transform: scale(1, 1);
+            transition: transform .4s cubic-bezier(.45, 2, .5, .75);
+          }
         }
       }
     }
@@ -72,38 +74,40 @@
       &::before {
         background: $radio-background-color;
         border-radius: $radio-border-radius-value;
-        transition: background 1s cubic-bezier(0.45, 2, 0.5, 0.75);
+        transition: background 1s cubic-bezier(.45, 2, .5, .75);
       }
 
       &::after {
         background: none;
-        border: none;
-        border-left: $radio-border-width solid $radio-tick-color;
+        border: 0;
         border-bottom: $radio-border-width solid $radio-tick-color;
+        border-left: $radio-border-width solid $radio-tick-color;
         border-radius: inherit;
         height: ($radio-height / 4);
         left: ($radio-width / 4.75);
         top: (($radio-height / 4.75) + $radio-border-width);
-        transform: rotate(-45deg) scale(0,0);
-        transition: transform 0.4s cubic-bezier(0.45, 2, 0.5, 0.75);
+        transform: rotate(-45deg) scale(0, 0);
+        transition: transform .4s cubic-bezier(.45, 2, .5, .75);
         width: (($radio-width / 2) + $radio-border-width);
       }
     }
 
-    input[type="radio"] {
-      &:checked {
+    input {
+      &[type='radio'] {
+        &:checked {
 
-        + label {
+          + label {
 
-          &::before {
-            background: $radio-tick-selected-background;
-            border: ($radio-border-width) solid $radio-tick-selected-border-color;
-            transition: background 0.4s cubic-bezier(0.45, 2, 0.5, 0.75);
-          }
+            &::before {
+              background: $radio-tick-selected-background;
+              border: ($radio-border-width) solid $radio-tick-selected-border-color;
+              transition: background .4s cubic-bezier(.45, 2, .5, .75);
+            }
 
-          &::after {
-            transform: rotate(-45deg) scale(1,1);
-            transition: transform 0.4s cubic-bezier(0.45, 2, 0.5, 0.75);
+            &::after {
+              transform: rotate(-45deg) scale(1, 1);
+              transition: transform .4s cubic-bezier(.45, 2, .5, .75);
+            }
           }
         }
       }
