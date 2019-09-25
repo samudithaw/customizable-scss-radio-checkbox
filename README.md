@@ -1,6 +1,8 @@
 # Customizable Radio & Checkbox
 
-Pure CSS only customizable radio button and checkbox
+Pure CSS only customizable radio button and checkbox.
+
+[Demo](https://github.com/samudithaw/customizable-scss-radio-checkbox/example/demo.html)
 
 ## Installation
 
