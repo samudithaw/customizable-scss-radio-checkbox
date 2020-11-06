@@ -84,12 +84,12 @@
       &::after {
         background: $check-box-selected-background-color;
         border: 0;
-        height: ($check-box-height / 2.25);
-        left: ($check-box-width / 3.6);
-        top: ($check-box-height / 3.6);
+        height: ($check-box-height / 1.5);
+        left: ($check-box-width / 6);
+        top: ($check-box-height / 5.5);
         transform: scale(0, 0);
         transition: transform .2s cubic-bezier(.45, 2, .5, .75);
-        width: ($check-box-height / 2.25);
+        width: ($check-box-height / 1.5);
       }
     }
 
